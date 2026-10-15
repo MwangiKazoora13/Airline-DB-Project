@@ -144,7 +144,7 @@ These changes bring the design to roughly third normal form: each fact is stored
 - **Views:** `v_flight_availability` (a search-ready flight list with seats left), `v_booking_details` (one readable row per booking), `v_customer_contacts` (address, phones and fax in one row), and `v_seat_usage` (a helper for the others).
 - **Constraints:** `CHECK` rules (arrival after departure, origin ≠ destination, prices positive, 1–9 passengers), unique emails and unique flight numbers per airline.
 
-### Design decisions worth mentioning in an interview
+### Design decisions worth mentioning
 
 - **Derived data isn't stored.** Booked seats are calculated, so they can never drift out of sync.
 - **Prices are frozen at booking time.** A later fare change doesn't alter existing bookings.
