@@ -2,8 +2,6 @@
 
 A relational database for an African airline reservation company. It stores airlines, airports, flights and their dated departures, customers (with addresses, phones and fax), and bookings. Seat availability, pricing and overbooking protection are handled inside the database itself.
 
-It is a redesign of a university group project. The original had seven tables with no foreign keys. This version is fully linked, normalised and enforces its own business rules.
-
 **Tech:** MySQL 8.0.16+ · SQL (DDL, DML) · views · stored function · stored procedures · triggers · transactions
 
 ---
